@@ -1,3 +1,5 @@
+// p.24のAddとMultiplyまで実装した
+
 const assignInspect = target => Object.assign(target, { inspect: function () { return `<<${this.toString()}>>` } })
 
 const _multiply = (left, right) => assignInspect({ type: 'multiply', left, right, toString: () => `${left} * ${right}` })

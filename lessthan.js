@@ -1,3 +1,5 @@
+// p.29 lessthanとbooleanを実装
+
 const assignInspect = target => Object.assign(target, {
   inspect: function () { return `<<${this.toString()}>>` }
 })

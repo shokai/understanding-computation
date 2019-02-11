@@ -1,3 +1,5 @@
+// p.27のreduceして式を再帰的に評価する所まで
+
 const assignInspect = target => Object.assign(target, {
   inspect: function () { return `<<${this.toString()}>>` }
 })

@@ -1,3 +1,5 @@
+// p.31 variableを実装、machineやadd/multiply等にenvironmentを追加
+
 const assignInspect = target => Object.assign(target, {
   inspect: function () { return `<<${this.toString()}>>` }
 })

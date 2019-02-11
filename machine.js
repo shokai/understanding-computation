@@ -1,3 +1,5 @@
+// p.28 式を再帰的にreduceしていくmachineを実装した
+
 const assignInspect = target => Object.assign(target, {
   inspect: function () { return `<<${this.toString()}>>` }
 })
