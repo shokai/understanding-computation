@@ -31,7 +31,7 @@ const _multiply = (left, right) => assignInspect({
 })
 
 const _machine = expression => {
-  const step = () => expression = expression.reduce()
+  const step = () => { expression = expression.reduce() }
   return {
     run: () => {
       while (expression.reducible) {

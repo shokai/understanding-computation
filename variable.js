@@ -51,7 +51,7 @@ const _variable = name => assignInspect({
 })
 
 const _machine = (expression, environment) => {
-  const step = () => expression = expression.reduce(environment)
+  const step = () => { expression = expression.reduce(environment) }
   return {
     run: () => {
       while (expression.reducible) {
