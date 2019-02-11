@@ -1,5 +1,5 @@
 const assignInspect = target => Object.assign(target, {
-  inspect: function () { return `<<${this.toString()}>>`}
+  inspect: function () { return `<<${this.toString()}>>` }
 })
 
 const _number = value => assignInspect({
@@ -37,4 +37,3 @@ console.log(exp)
 console.log(exp = exp.reduce())
 console.log(exp = exp.reduce())
 console.log(exp = exp.reduce())
-
